@@ -1,0 +1,29 @@
+// @mixin Displey($items, $space, $gap) {
+//     display: flex;
+//     align-items: $items;
+//     justify-content: $space;
+//     gap: $gap;
+// }
+
+// @mixin Textstyle($fw, $fs, $lh, $ls, $clr) {
+//     font-weight: $fw;
+//     font-size: $fs;
+//     line-height: $lh;
+//     letter-spacing: $ls;
+//     color: $clr
+// }
+
+// @mixin BtnStyle($btnClr, $btnbg, $btnborder) {
+//     @include Textstyle($fw: 500, $fs: 24px, $lh: 100%, $ls: 0%, $clr: $btnClr);
+//     padding: 11px 35px;
+//     background-color: $btnbg;
+//     border-radius: 10px;
+//     border: 3px solid $btnborder;
+
+// }
+
+// @mixin HoverText() {
+//     &__hover {
+//         color: $color-blue;
+//     }
+// }

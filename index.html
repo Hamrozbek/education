@@ -7,11 +7,12 @@
     <link rel="icon" href="./images/logo.svg">
     <link rel="stylesheet" href="./css/main.css">
     <title>Обучения</title>
+    <style type="text/tailwindcss"></style>
 </head>
 
 <body>
     <header class="site-header">
-        <div class="container header">
+        <div class="containers header">
             <a class="header__logo-link" href="/">
                 <img src="./images/logo.svg" alt="Site Logo" width="156" height="111">
             </a>
@@ -35,31 +36,39 @@
         </div>
     </header>
     <main>
-        <section class="site-section">
-            <div class="container hero">
-                <div class="hero__contact-wrapper">
-                    <div class="hero__wrapper">
-                        <h2>The Best Future Stars <span class="hero__span">- мы заботимся о будущем вашего ребенка
-                            </span></h2>
-                        <p>Наши опытные преподователи сделают процесс обучения максимально интересным и эффективным для
-                            вашего ребенка </p>
-                    </div>
-                    <div class="hero__wrapper-btn">
-                        <button class="hero__btn">Позвонить </button>
-                        <button class="hero__btn-bottim">Подробнее </button>
+        <section class="!pt-[180px] overflow-hidden relative !pb-[142px] bg-[#fafafa]">
+            <div class="containers">
+                <div class="max-w-[568px] flex flex-col gap-10">
+                    <h2 class="font-bold text-[40px] leading-[100%] text-[#000]">
+                        <span class="text-[#5855E7]">The Best Future Stars</span> – мы заботимся о будущем вашего
+                        ребенка
+                    </h2>
+                    <p class="font-normal text-[18px] leading-[100%] text-[#000000]">
+                        Наши опытные преподаватели сделают процесс обучения максимально интересным и эффективным для
+                        вашего ребенка
+                    </p>
+                    <div class="flex items-center justify-between">
+                        <a class="!w-[47%] font-medium text-[36px] border-[3px] border-transparent leading-[100%] text-white py-[7px] text-center bg-[#6347EB] rounded-[10px]"
+                            href="tel:">
+                            Позвонить
+                        </a>
+                        <button
+                            class="!w-[47%] font-medium text-[36px] leading-[100%] border-[3px] border-[#6347EB] text-black py-[7px] text-center bg-transparent rounded-[10px]">
+                            Подробнее
+                        </button>
                     </div>
                 </div>
-                <img src="./images/ребенок.png" alt="bola-img" width="680" height="748">
             </div>
+            <img class="absolute right-0 top-0" src="./images/ребенок.png" alt="bola-img">
         </section>
-        <section class="site-about">
-            <div class="container about">
-                <div class="about__contact-wrapper">
-                    <h2 class="about__item-text">О нас</h2>
-                    <img class="about__contact-img" src="./images/o-nas.svg" alt="o-nas" width="534" height="492">
-                    <div class="about__contact">
-                        <h2 class="about__item">О нас</h2>
-                        <p class="about__text">Для комфортного образования и времяпровождения, мы объединяем
+        <section class="">
+            <div class="containers">
+                <div class="pt-[184px] pb-[214px] flex gap-[46px]">
+                    <img src="./images/about-img.png" alt="o-nas" width="534" height="492">
+                    <div class="pt-[30px]">
+                        <h2 class="font-bold text-[40px] leading-[100%] text-[#000000] pb-[48px]">О нас</h2>
+                        <p class="font-normal text-[24px] leading-[100%] text-[#000000]">Для комфортного образования и
+                            времяпровождения, мы объединяем
                             детей небольшими комфортными группами, которые разделяются по возрастным категориям, а также
                             и по образовательным направлениям. Индивидуальный подход к каждому ребёнку. В классе не
                             более 10 учеников. Углублённое изучение английского языка.Кроме этого, мы отправляем наших
@@ -70,135 +79,180 @@
                 </div>
             </div>
         </section>
-        <section class="site-adventages">
-            <div class="container adventages">
-                <h2>Наши преимущества</h2>
-                <div class="adventages__conact-wrapper">
-                    <div class="adventages__text">
-                        <img src="./images/nash1.svg" alt="class" width="225" height="225">
-                        <h3 class="adventages__text-item">3-х разовое питание </h3>
-                        <p class="adventages__item">Для комфотрного времяпровождения в нашей школе, мы готовим вкусную и
+        <section class="bg-[#5855E7] text-white">
+            <div class="containers">
+                <h2 class="text-[40px] font-bold leading-[100%] pt-[73px] text-center">Наши преимущества</h2>
+                <div class="flex flex-wrap gap-[80px] justify-center pt-[92px] pb-[75px]">
+                    <div class="max-w-[261px]">
+                        <img class="m-auto" src="./images/nash1.svg" alt="class" width="225" height="225">
+                        <h3 class="font-bold text-[24px] leading-[100%] pb-[20px] text-center">3-х разовое питание </h3>
+                        <p class="font-normal text-[18px] leading-[100%] text-center">Для комфотрного времяпровождения в
+                            нашей школе, мы готовим вкусную и
                             полезную еду 3 раза в
                             день</p>
                     </div>
-                    <div class="adventages__text2">
-                        <img src="./images/nash2.svg" alt="class" width="225" height="225">
-                        <h3 class="adventages__text-item">IT технологии</h3>
-                        <p class="adventages__item">21 век- это век информационных технологий. Ваш ребенок сможет
+                    <div class="max-w-[375px]">
+                        <img class="m-auto" src="./images/nash2.svg" alt="class" width="225" height="225">
+                        <h3 class="font-bold text-[24px] leading-[100%] pb-[20px] text-center">IT технологии</h3>
+                        <p class="font-normal text-[18px] leading-[100%] text-center">21 век- это век информационных
+                            технологий. Ваш ребенок сможет
                             научиться азам
                             програмированния, тенденциям в мире гаджетов и профессиям будущего</p>
                     </div>
-                    <div class="adventages__text3">
-                        <img src="./images/nash3.svg" alt="class" width="225" height="225">
-                        <h3 class="adventages__text-item">Ментальная арифметика </h3>
-                        <p class="adventages__item">Мы обучим детей быстро вычислять в уме сложные математические
+                    <div class="max-w-[288px]">
+                        <img class="m-auto" src="./images/nash3.svg" alt="class" width="225" height="225">
+                        <h3 class="font-bold text-[24px] leading-[100%] pb-[20px] text-center">Ментальная арифметика
+                        </h3>
+                        <p class="font-normal text-[18px] leading-[100%] text-center">Мы обучим детей быстро вычислять в
+                            уме сложные математические
                             рассчёты</p>
                     </div>
-                    <div class="adventages__text4">
-                        <img src="./images/nash4.svg" alt="class" width="225" height="225">
-                        <h3 class="adventages__text-item">Общение на английском языке </h3>
-                        <p class="adventages__item">Для свободного общения на английском языке, у нас предусматривается
+                    <div class="max-w-[354px]">
+                        <img class="m-auto" src="./images/nash4.svg" alt="class" width="225" height="225">
+                        <h3 class="font-bold text-[24px] leading-[100%] pb-[20px] text-center">Общение на английском
+                            языке </h3>
+                        <p class="font-normal text-[18px] leading-[100%] text-center">Для свободного общения на
+                            английском языке, у нас предусматривается
                             целый день Speaking</p>
                     </div>
-                    <div class="adventages__text5">
-                        <img src="./images/nash5.svg" alt="class" width="225" height="225">
-                        <h3 class="adventages__text-item">Иностранные языки </h3>
-                        <p class="adventages__item">Наши высококвалифицированные учителя обучат детей: Английскому,
+                    <div class="max-w-[302px]">
+                        <img class="m-auto" src="./images/nash5.svg" alt="class" width="225" height="225">
+                        <h3 class="font-bold text-[24px] leading-[100%] pb-[20px] text-center">Иностранные языки </h3>
+                        <p class="font-normal text-[18px] leading-[100%] text-center">Наши высококвалифицированные
+                            учителя обучат детей: Английскому,
                             русскому, арабскому и
                             китайскому языку</p>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="site-class">
-            <div class="container class">
-                <h2>Классы</h2>
-                <h3>Классы</h3>
-                <div class="class__contact-wrapper">
-                    <div class="class__contact">
-                        <img src="./images/class1.png" alt="class" width="265" height="251">
-                        <h3 class="class__text">1 классы</h3>
-                        <p class="class__item">6-7 лет</p>
-                        <p class="class__item-p">Изучение калиграфии, логопедия, английский этикет, разговорный
+        <section>
+            <div class="containers">
+                <h2 class="text-center font-bold text-[94px] text-[#EEEEEE] leading-[100%] pt-[146px]">Классы</h2>
+                <h3 class="text-center font-bold text-[40px] text-[#000000] leading-[100%]">Классы</h3>
+                <div class="flex flex-wrap gap-[86px] justify-center pt-[87px] pb-[118px]">
+                    <div class="bg-[#5855E7] max-w-[301px] rounded-[15px] text-center">
+                        <img class="m-auto pt-[19px]" src="./images/class1.png" alt="class" width="265" height="251">
+                        <h3 class="font-semibold text-[30px] leading-[100%] text-[#FAFBFD] pt-[25px]">1 классы</h3>
+                        <p class="font-medium text-[18px] leading-[100%] text-[#FAFBFD] pt-[15px]">6-7 лет</p>
+                        <p
+                            class="font-normal text-[14px] leading-[100%] text-[#FAFBFD] pt-[20px] pl-[19px] pr-[19px] pb-[30px]">
+                            Изучение калиграфии, логопедия, английский этикет, разговорный
                             английский, общеобразовательные предметы и спортивные занятия</p>
-                        <button class="class__button">Записаться</button>
+                        <button
+                            class="font-medium text-[18px] leading-[100%] text-[#6347EB] pl-[24px] pr-[24px] pt-[4px] pb-[6px] bg-[#FFFFFF] rounded-[5px] mb-[33px]">Записаться</button>
                     </div>
-                    <div class="class__contact">
-                        <img src="./images/class2.png" alt="class" width="265" height="251">
-                        <h3 class="class__text">2 классы</h3>
-                        <p class="class__item">7-8 лет</p>
-                        <p class="class__item-p">Английский 1 step, китайский язык, арифметика, логическое мышление,
+                    <div class="bg-[#5855E7] max-w-[301px] rounded-[15px] text-center">
+                        <img class="m-auto pt-[19px]" src="./images/class2.png" alt="class" width="265" height="251">
+                        <h3 class="font-semibold text-[30px] leading-[100%] text-[#FAFBFD] pt-[25px]">2 классы</h3>
+                        <p class="font-medium text-[18px] leading-[100%] text-[#FAFBFD] pt-[15px]">7-8 лет</p>
+                        <p
+                            class="font-normal text-[14px] leading-[100%] text-[#FAFBFD] pt-[20px] pl-[19px] pr-[19px] pb-[30px]">
+                            Английский 1 step, китайский язык, арифметика, логическое мышление,
                             общеобразовательные предметы и спортивные занятия</p>
-                        <button class="class__button">Записаться</button>
+                        <button
+                            class="font-medium text-[18px] leading-[100%] text-[#6347EB] pl-[24px] pr-[24px] pt-[4px] pb-[6px] bg-[#FFFFFF] rounded-[5px] mb-[33px]">Записаться</button>
                     </div>
-                    <div class="class__contact">
-                        <img src="./images/class3.png" alt="class" width="265" height="251">
-                        <h3 class="class__text">3 классы</h3>
-                        <p class="class__item">8-9 лет</p>
-                        <p class="class__item-p">Английский 2 step, арабский язык, психология, ментальная арифметика, IT
+                    <div class="bg-[#5855E7] max-w-[301px] rounded-[15px] text-center">
+                        <img class="m-auto pt-[19px]" src="./images/class3.png" alt="class" width="265" height="251">
+                        <h3 class="font-semibold text-[30px] leading-[100%] text-[#FAFBFD] pt-[25px]">3 классы</h3>
+                        <p class="font-medium text-[18px] leading-[100%] text-[#FAFBFD] pt-[15px]">8-9 лет</p>
+                        <p
+                            class="font-normal text-[14px] leading-[100%] text-[#FAFBFD] pt-[20px] pl-[19px] pr-[19px] pb-[30px]">
+                            Английский 2 step, арабский язык, психология, ментальная арифметика, IT
                             технологии, общеобразовательные предметы и спортивные занятия</p>
-                        <button class="class__button">Записаться</button>
+                        <button
+                            class="font-medium text-[18px] leading-[100%] text-[#6347EB] pl-[24px] pr-[24px] pt-[4px] pb-[6px] bg-[#FFFFFF] rounded-[5px] mb-[33px]">Записаться</button>
                     </div>
-                    <div class="class__contact">
-                        <img src="./images/class4.png" alt="class" width="265" height="251">
-                        <h3 class="class__text">4 классы</h3>
-                        <p class="class__item">9-10 лет</p>
-                        <p class="class__item-p">Английский 3 step, французский и немецкий язык, IT технологии,
+                    <div class="bg-[#5855E7] max-w-[301px] rounded-[15px] text-center">
+                        <img class="m-auto pt-[19px]" src="./images/class4.png" alt="class" width="265" height="251">
+                        <h3 class="font-semibold text-[30px] leading-[100%] text-[#FAFBFD] pt-[25px]">4 классы</h3>
+                        <p class="font-medium text-[18px] leading-[100%] text-[#FAFBFD] pt-[15px]">9-10 лет</p>
+                        <p
+                            class="font-normal text-[14px] leading-[100%] text-[#FAFBFD] pt-[18px] pl-[19px] pr-[19px] pb-[16px]">
+                            Английский 3 step, французский и немецкий язык, IT технологии,
                             общеобразовательные предметы и спортивные занятия</p>
-                        <button class="class__button">Записаться</button>
+                        <button
+                            class="font-medium text-[18px] leading-[100%] text-[#6347EB] pl-[24px] pr-[24px] pt-[4px] pb-[6px] bg-[#FFFFFF] rounded-[5px] mb-[33px]">Записаться</button>
                     </div>
-                    <div class="class__contact">
-                        <img src="./images/class5.png" alt="class" width="265" height="251">
-                        <h3 class="class__text">0 классы</h3>
-                        <p class="class__item">4-5 лет</p>
-                        <p class="class__item-p">Математика, логическое мышление, пропись, изо студия, IT технологии,
+                    <div class="bg-[#5855E7] max-w-[301px] rounded-[15px] text-center">
+                        <img class="m-auto pt-[19px]" src="./images/class5.png" alt="class" width="265" height="251">
+                        <h3 class="font-semibold text-[30px] leading-[100%] text-[#FAFBFD] pt-[25px]">0 классы</h3>
+                        <p class="font-medium text-[18px] leading-[100%] text-[#FAFBFD] pt-[15px]">4-5 лет</p>
+                        <p
+                            class="font-normal text-[14px] leading-[100%] text-[#FAFBFD] pt-[20px] pl-[19px] pr-[19px] pb-[30px]">
+                            Математика, логическое мышление, пропись, изо студия, IT технологии,
                             робототехника гимнастика, таэквондо</p>
-                        <button class="class__button">Записаться</button>
+                        <button
+                            class="font-medium text-[18px] leading-[100%] text-[#6347EB] pl-[24px] pr-[24px] pt-[4px] pb-[6px] bg-[#FFFFFF] rounded-[5px] mb-[33px]">Записаться</button>
                     </div>
                 </div>
-                <h2>Связаться</h2>
-                <h3>Связаться с нами</h3>
+                <h2 class="text-center font-bold text-[94px] text-[#EEEEEE] leading-[100%]">Связаться</h2>
+                <h3 class="text-center font-bold text-[40px] text-[#000000] leading-[100%] pb-[81px]">Связаться с нами
+                </h3>
             </div>
         </section>
-        <section class="site-contact">
-            <div class="container contact">
-                <div class="contact__wrapper">
-                    <div class="contact__contacts">
-                        <h2>Контакты </h2>
-                        <p><span class="contact__dot">■</span>г.Ташкент, Чиланзар 16-й квартал, ул. Ботирма</p>
-                        <p><span class="contact__dot">■</span>+998970020771</p>
-                        <p><span class="contact__dot">■</span>+998971970771 (Mon–Fri: 09:00–17:00)</p>
-                        <img src="./images/o-nas.svg" alt="o-nas" width="485" height="338">
+        <section>
+            <div class="containers mx-auto bg-[#5855E7] rounded-[15px] mb-[97px]">
+                <div class="flex gap-[114px]">
+
+                    <div class="">
+                        <h2 class="text-[40px] font-semibold text-[#FFFFFF] leading-[100%] pl-[50px] pt-[50px]">Контакты
+                        </h2>
+                        <p class="text-[24px] font-normal text-[#FFFFFF] leading-[100%] pt-[28px] pl-[50px]"><span
+                                class="text-[#A23AC1] mr-[12px]">■</span>г.Ташкент, Чиланзар 16-й квартал, ул. Ботирма
+                        </p>
+                        <p class="text-[24px] font-normal text-[#FFFFFF] leading-[100%] pt-[41px] pl-[50px]"><span
+                                class="text-[#A23AC1] mr-[12px]">■</span>+998970020771</p>
+                        <p class="text-[24px] font-normal text-[#FFFFFF] leading-[100%] pt-[41px] pl-[50px] pb-[30px]">
+                            <span class="text-[#A23AC1] mr-[12px]">■</span>+998971970771 <span
+                                class="text-[20px]">(Пн.–Пт.: с 09:00 до 17:00)</span>
+                        </p>
+                        <img class="pb-[36px] pl-[23px]" src="./images/o-nas.svg" alt="o-nas" width="485" height="338">
                     </div>
-                    <div class="contact__form">
-                        <h2>Оставьте заявку</h2>
-                        <p>В честь открытия нашей школы дарим скидку -20%</p>
-                        <form class="contact__button">
-                            <input type="text" placeholder="Имя" required>
-                            <input type="text" placeholder="Фамилия" required>
-                            <textarea placeholder="Номер" rows="3" required></textarea>
-                            <button>Отправить</button>
+
+                    <div>
+                        <h2 class="text-[40px] font-semibold text-[#FFFFFF] leading-[100%] pt-[50px]">Оставьте заявку
+                        </h2>
+                        <p class="font-normal text-[#FFFFFF] text-[18px] leading-[100%] pt-[28px] pb-[20px]">В честь
+                            открытия нашей школы дарим скидку -20%</p>
+                        <form class="flex flex-col">
+                            <input
+                                class="font-light text-[#000000] text-[20px] leading-[100%] rounded-[5px] max-w-[400px] pt-[15px] pl-[12px] pb-[19px]  mb-[26px]"
+                                type="text" placeholder="Имя" required>
+                            <input
+                                class="font-light text-[#000000] text-[20px] leading-[100%] rounded-[5px] max-w-[400px] pt-[15px] pl-[12px] pb-[19px]  mb-[26px]"
+                                type="text" placeholder="Фамилия" required>
+                            <input
+                                class="font-light text-[#000000] text-[20px] leading-[100%] rounded-[5px] max-w-[400px] h-[300px] pl-[12px] pb-[240px] mb-[26px]"
+                                type="tel" placeholder="Номер" required>
+                            <button
+                                class="font-medium text-[24px] text-[#000000] leading-[100%] bg-[#FFFFFF] pt-[12px] pb-[12px] pl-[37px] pr-[37px] max-w-[197px] rounded-[5px] ml-[200px]"
+                                type="submit">Отправить</button>
                         </form>
                     </div>
                 </div>
             </div>
         </section>
+
     </main>
-    <footer class="site-footer">
-        <div class="container footer">
-            <div class="footer__logo">
-                <img src="./images/logo.svg" alt="Kompaniya Logotipi" width="156" height="111">
-            </div>
-            <div class="footer__item">
-                <h2>Контакты:</h2>
-                <div class="footer__item-phone">
-                    <a href="tel:+998979700771">+998 97 970 0771</a>
-                    <a href="tel:+998970200771">+998 97 020 0771</a>
+    <footer class="bg-[#5855E7]">
+        <div class="containers flex justify-between">
+            <img class="pt-[27px] pb-[28px]" src="./images/logo.svg" alt="Kompaniya Logotipi" width="156" height="111">
+            <div class="flex items-center gap-[37px]">
+                <div>
+                    <p class="font-medium text-[20px] leading-[100%] text-[#FFFFFF]">Контакты:</p>
+                </div>
+                <div class="flex flex-col">
+                    <a class="font-normal text-[20px] leading-[100%] text-[#FFFFFF] pb-[9px]"
+                        href="tel:+998979700771">+998 97 970 0771</a>
+                    <a class="font-normal text-[20px] leading-[100%] text-[#FFFFFF]" href="tel:+998970200771">+998 97
+                        020 0771</a>
                 </div>
             </div>
-            <div class="footer__links">
-                <p>Будьте с нами:</p>
-                <div class="footer__links-a">
+            <div class="pt-[45px] pb-[45px]">
+                <p class="font-semibold text-[20px] leading-[100%] text-[#FFFFFF] pb-[26px]">Будьте с нами:</p>
+                <div class="flex gap-[21px]">
                     <a href="https://t.me/ruslanovicc18" target="_blank"><img src="./images/telegram (11) 1.svg"
                             alt="telegram" width="32" height="32"></a>
                     <a href="https://www.instagram.com/nuriddinovv_kh" target="_blank"><img
@@ -208,7 +262,19 @@
                 </div>
             </div>
         </div>
-    </footer> 
+    </footer>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
 </body>
 
 </html>
